@@ -31,6 +31,7 @@ export default function AuthScreen(){
                 setError(signUpError);
                 return;
             }
+            router.replace("/(tabs)")
         } else {
             const signInError = await signIn(email, password);
             if (signInError) {
@@ -63,7 +64,7 @@ export default function AuthScreen(){
                     mode="outlined"
                     style={styles.input}
                     value={email}
-                    onChangeText = {setEmail}
+                    onChangeText={setEmail}
                 />
                 <TextInput
                     label="Password"
@@ -71,7 +72,7 @@ export default function AuthScreen(){
                     mode="outlined"
                     style={styles.input}
                     value={password}
-                    onChangeText = {setPassword}
+                    onChangeText={setPassword}
                 />
 
                 {error && <Text style={{color: theme.colors.error, marginBottom: 16}}>{error}</Text>}
