@@ -16,7 +16,7 @@ export const HABITS_COLLECTION_ID =
 export const COMPLETIONS_COLLECTION_ID =
   process.env.EXPO_PUBLIC_COMPLETION_COLLECTION_ID!;
 
-export interface RealtimeResponse {
+export interface RealTimeResponse {
   events: string[];
   payload: any;
 }
