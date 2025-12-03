@@ -9,7 +9,7 @@ export default function StreaksScreen() {
         alignItems: "center",
       }}
     >
-      <Text>This is the Login Page</Text>
+      <Text>This is the Streaks Page</Text>
     </View>
   );
 }
